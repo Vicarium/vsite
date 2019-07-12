@@ -60,30 +60,30 @@
   	            		<h5><strong>Get in Contact</strong></h5>
   	            		{% get_contact_fields as contact %}
   	            		{% include "contact/includes/contact_card.html" with contact=contact only %}
-  	
-  	            		<br>
-  	
-  	            		<h5><strong>Follow Us</strong></h5>
-  	            		<div class="social">
-  	            			{% include "contact/includes/social.html" %}
-  	            		</div>
   	          		</div>
   	
   	          		<div id="sitemap" class="medium-3 cell hide-for-small-only">
-	            		<h5><strong>Explore Our Site</strong></h5>
+	            		<h5><strong>Explore the Site</strong></h5>
 	            		{% site_menu parent=site_root calling_page=self %}
 	          		</div>
 	
 	          		<div class="medium-4 cell text-center hide-for-small-only">
-	            		<a href="https://www.google.com/maps/place/chrisdev/" target="_blank">
+  	
+						<h5><strong>Follow Me</strong></h5>
+						<div class="social">
+							{% include "contact/includes/social.html" %}
+						</div>
+						
+						
+						<!-- <a href="https://www.google.com/maps/place/chrisdev/" target="_blank">
 	            			<img src="{% static 'img/map.png' %}" alt="" style="border: 5px solid #fff;" />
-	            		</a>
+	            		</a> -->
 	          		</div>
   	        	</div>
   	        </div>
   	    	<div id="copyright">
   	      		<div class="grid-x grid-padding-x align-center">
-  	        		<p>Copyright © 2018 ChrisDev. All rights reserved</p>
+  	        		<p>Copyright © 2019. No rights reserved</p>
   	      		</div>
   	    	</div>
   	  	</footer>
